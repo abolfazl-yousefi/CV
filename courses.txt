@@ -1,9 +1,12 @@
-spreedsheet: 4 course
+2 & 3:
 SQL Fundamentals: 1 course
-SQL Server Fundamentals: 3 course
 Importing & Cleaning Data with Python: 1 course
-Time Series with Python: 5 course
 Data Visualization with Python: 2 course
+4 & 5 & shanbe
+Time Series with Python: 5 course
+1, 2 
 Image Processing with Python: 3 course
+3, 4, 5
 Machine Learning with Python: 4 course
-Importing & Cleaning Data with Python: 1 course
+shanbe, yekshanbe
+SQL Server Fundamentals: 3 course
