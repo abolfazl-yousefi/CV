@@ -8,11 +8,41 @@
 		<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<style>
+
+
+
+		
+			:root {
+				--main-padding: 1vw;
+				--main-maring-bottom: 1vw;
+				--main-border-radius: 15px;
+				--main-margin-left: 1vw;
+				--main-margin-right: 1vw;
+
+
+				--header-background-color:LightSlateGray;
+				--introduce-background-color:LightGray;
+				--Education-background-color:AntiqueWhite;
+				--Experience-background-color:HoneyDew ;
+				--Scientific_research-background-color:Bisque ;
+				--Refrences-background-color:LightBlue;
+				--Personal_info-background-color:Cyan ;
+				--Technical-Skills-background-color:Moccasin ;
+				--Certifications-background-color:LightCoral ;
+				
+
+
+
+
+
+			}
+
 			body{
 				font-family:"Times New Roman";
-				line-height: 1.6;
+				line-height: 2rem;
 				text-align: justify;
 				text-justify:inter-word;
+
 			}
 			.parent {
 				display: grid;
@@ -20,19 +50,137 @@
 				grid-template-rows: repeat(12, 1fr);
 				grid-column-gap: 5px;
 				grid-row-gap: 5px;
+
 			}
-			.div1 { grid-area: 1 / 1 / 2 / 13; }
+			.header { grid-area: 1 / 1 / 2 / 13; }
 			.div2 { grid-area: 2 / 1 / 13 / 9; }
 			.div3 { grid-area: 2 / 9 / 13 / 13; }
-			.div1 {
-				background-color:gray;
+
+
+			.header {
+				background-color:var(--header-background-color);
 				color:white;
-				padding:20px;
+				border-radius: var(--main-border-radius);
+				padding-left: var(--main-padding);
+				margin-bottom: var(--main-maring-bottom);
+				margin-left: var(--main-margin-left);
+				margin-right: var(--main-margin-right);
+
+
 			}
 
-			.div2 {
-				width: 85%;
+			body{
+				border-radius: var(--main-border-radius);
 			}
+
+
+
+			.div2 {
+				margin-left: var(--main-margin-left);
+				margin-right: var(--main-margin-left);
+			}
+
+			.div3 {
+				margin-right: var(--main-margin-left);
+			}
+/*
+
+			ul {
+				color:gray;
+			}
+
+			ul strong {
+				color:black;
+			}
+*/
+			#Refrences ul i {
+				font-size: inherit;
+				color: black;
+
+			}
+			#Experience ul i {
+				font-size: inherit;
+			}
+			#Education ul i {
+				font-size: inherit;
+			}
+
+			#introduce {
+				border-radius: var(--main-border-radius);
+				background-color:var(--introduce-background-color);
+				padding: var(--main-padding);
+				margin-bottom: var(--main-maring-bottom);
+			}
+			#Education {
+				border-radius: var(--main-border-radius);
+				background-color:var(--Education-background-color);
+				padding: var(--main-padding);
+				margin-bottom: var(--main-maring-bottom);
+			}
+
+			#Experience {
+				border-radius: var(--main-border-radius);
+				background-color:var(--Experience-background-color);
+				padding: var(--main-padding);
+				margin-bottom: var(--main-maring-bottom);			
+			}
+
+			#Scientific_research {
+				border-radius: var(--main-border-radius);
+				background-color:var(--Scientific_research-background-color);
+				padding: var(--main-padding);
+				margin-bottom: var(--main-maring-bottom);
+			}
+
+			#Refrences {
+				border-radius: var(--main-border-radius);
+				background-color:var(--Refrences-background-color);
+				padding: var(--main-padding);
+				margin-bottom: var(--main-maring-bottom);
+			}
+
+			#Personal_info {
+				background-color:var(--Personal_info-background-color);
+				border-radius: var(--main-border-radius);
+				padding: var(--main-padding);
+				margin-bottom: var(--main-maring-bottom);	
+			}
+
+
+			#Technical-Skills {
+				background-color:var(--Technical-Skills-background-color);
+				border-radius: var(--main-border-radius);
+				padding: var(--main-padding);
+				margin-bottom: var(--main-maring-bottom);		
+			}
+			#Certifications {
+				background-color:var(--Certifications-background-color);
+				border-radius: var(--main-border-radius);
+				padding: var(--main-padding);
+				margin-bottom: var(--main-maring-bottom);	
+
+			}
+
+
+			#Technical-Skills  ul {
+				margin-left: 10px;
+				
+			}
+			#Certifications  ul {
+				margin-left: 10px;
+			
+			}
+
+/*
+			.course ul li a  {
+				color:gray;
+			}
+
+			#courses a {
+				color:gray;
+			}
+
+*/
 
 			a:link {
 				color: black;
@@ -48,6 +196,7 @@
 				color: red;
 				background-color: transparent;
 				text-decoration: none;
+				transform: scale(2.1);
 			}
 			a:active {
 				color: yellow;
@@ -58,12 +207,9 @@
 				font-size: 24px;
 				color: blue;
 			}
-			.Technical-Skills  ul {
-				margin-left: 10px;
-			}
-			.Certifications  ul {
-				margin-left: 10px;
-			}
+
+
+
 			.info_parent {
 				list-style-type: none;
 				margin-left: -7px;
@@ -71,19 +217,23 @@
 			.info_parent .info{
 				list-style-type: none;
 			}
-			.Personal_info .fas {
-				font-size: 18px;
-				color: red;
-				margin-left: 0px;
-			}
-			.Personal_info .fa-wrench {
+
+
+			#Personal_info .fa-wrench {
 				font-size: 24px;
-								color: blue;
+				color: blue;
 			}
-			.Personal_info .info {
+			#Personal_info .info {
 				margin-left: -20px;
 			}
 
+			#Personal_info  i {
+				font-size: 16px;
+				color: red;
+			}
+
+			
+/*
 			li:nth-child(odd) {
 				color: #777;
 			}
@@ -92,42 +242,45 @@
     			color: blue;
 			}
 
-			.courses ul li:nth-child(odd) {
-				color: #777;
-			}
+
 
 		</style>
 	</head>
 	<body>
 		<div class="parent">
-			<div class="div1">
+			<div class="header">
 				<h2>Abolfazl Yousefi</h2>
-				<h3>Data Scientist</h3>
+				<h3>Entry-level data scientist</h3>
 				<h3>M.Sc., B.Sc. Civil Engineering</h3>
 			</div>
 
 
 			<div class="div2">
-				<p> my name is abolfazl yousefi</p>
-				<div style="background-color: white">
-				<i class='fas fa-user-graduate'>	Education</i>
+
+				<div id="introduce" >
+					<p> A self taught data science professional with Bachelor’s and Master's degree in Civil Engineering. Seeking for the position of Data Scientist with ABC Inc., offering 4+ years hands-on experience utilizing statistical modeling and machine learning techniques.  Coming with solid math skills, programming skills, and advanced Excel skills. </p>
+				</div>
+				
+
+				<div id="Education">
+				<i class='fas fa-user-graduate'>&ensp;Education</i>
 					<ul>
 						<li><strong>M.Sc. Coastal, Ports & offshore Structures Engineering </strong><br>
-						University of Tehran <br>
+						University of Tehran  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<i class='fas fa-calendar-alt'>&ensp;2006-2010</i><br>
 						The University of Tehran is the top public university in Iran <br>
 						Ranked 134th among approximately 30000 participants in the nationwide university entrance exam for graduate studies (M.Sc. program) in Civil Engineering, Tehran, Iran. <br>
 						Ranked 2nd among graduate students of coastal, ports and offshore structures engineering</li>
 						<li><strong>B.Sc.  Civil Engineering </strong><br>
-						University of Qom <br>
+						University of Qom &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<i class='fas fa-calendar-alt'>&ensp;2006-2010</i><br>
 						The University of Qom is the top public university in Iran <br>
 						Top 20 percentile of the class</li>
 					</ul>	
 				</div>
 				
-				<div style="background-color: white">
-					<i class='fas fa-briefcase'>	Experience</i>
+				<div id="Experience">
+					<i class='fas fa-briefcase'>&ensp;Experience</i>
 					<ul>
-						<li><strong>Personal tutor in Kanoon Farhangi Amoozesh, Ghalamchi</strong></li>
+						<li><strong>Personal tutor in Kanoon Farhangi Amoozesh, Ghalamchi</strong> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<i class='fas fa-calendar-alt'>&ensp;2006-2010</i></li>
 						<ul>
 							<li>Supervised the students’ through his/her connection with the principal of the institute,
 							the teachers and the students’ parents.</li>
@@ -137,119 +290,115 @@
 							solve some exercises for the students and actively engage them with the problems</li>
 							<li>Improved students’ educational skills such as problem-solving, lesson planning.</li>
 						</ul>
-						<li><strong>Researcher in Water Institute, University of Tehran</strong></li>
+						<li><strong>Researcher in Water Institute, University of Tehran</strong> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<i class='fas fa-calendar-alt'>&ensp;2006-2010</i></li>
 						<ul>
 							<li>Developed a numerical model for coastal processes.</li>
 							<li>Performed analysis of numerical modeling and coastal processes</li>
 							<li>Conducted research studies for coastal process and published them</li>
 						</ul>
-						<li><strong>Teaching Assistant for Principles of Marine Hydraulics, University of Tehran</strong></li>
+						<li><strong>Teaching Assistant for Principles of Marine Hydraulics, University of Tehran</strong> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<i class='fas fa-calendar-alt'>&ensp;2006-2010</i></li>
 					</ul>	
 				</div>
 
-				<div style="background-color: white">
+				<div id="Scientific_research">
 					<i class='fas fa-user-graduate'>	Scientific research</i>
 					<ul>
 						<li>Final MSc. Thesis on <strong>“Investigation of wave-wave interactions by using of
 						mathematical modeling and field data”</strong> Under the supervision of Assoc. Prof P. Badiei.</li>
 						<li>A. Yousefi., P. Badiei., S. M. Mahmoudof. <strong>“Numerical Study of Wave Transformation
 							Using a Fully Dynamic Numerical Model in Time Domain Case Study at Nowshar Port</strong>
-						“, published in First International Conference on Oceanography for West Asia.</li>
+						“, First International Conference on Oceanography for West Asia.</li>
 						<li>A. Yousefi., P. Badiei., S. M. Mahmoudof. <strong>“Evaluation of the performance of two
 							numerical wave models in time and frequency domains in comparison with field
-							measurements carried out near Nowshahr port “</strong>, published in 11th International
+							measurements carried out near Nowshahr port “</strong>, 11th International
 						Congress on Civil Engineering.</li>
 					</ul>		
-
 				</div>
 				
 
-				<div style="background-color: white">
-					
-					<i class='fas fa-user-graduate'>	Refrences</i>
-							<ul>
+				<div id="Refrences" >		
+					<i class='fas fa-user-graduate'>&ensp;Refrences</i>
+					<ul>
 						<li><strong>Seyed Peyman Badiei, Associate Professor</strong><br>
-							School of Civil Engineering,
+							<i class='fas fa-map-marker-alt'>&ensp;</i>School of Civil Engineering,
 							College of Engineering, University of Tehran, Tehran, lran<br>
-							+98-21-61112812<br>
-							Pbadiei@ut.ac.ir</li>
+							<i class='fas fa-phone-square'>&ensp;</i>+98-21-61112812<br>
+							<i class='fas fa-envelope'>&ensp;</i>Pbadiei@ut.ac.ir</li>
 						<li><strong>Seyed Taghi Omid Naeini, Associate Professor,</strong>
-							<br>Head of Hydraulics and Fluid
+							<br><i class='fas fa-map-marker-alt'>&ensp;</i>Head of Hydraulics and Fluid
 							Mechanics Laboratory School of Civil Engineering, College of Engineering
 							University of Tehran, Tehran, lran<br>
-							+98-21-61112868<br>
-							Stnaeeni@ut.ac.ir</li>
+							<i class='fas fa-phone-square'>&ensp;</i>+98-21-61112868<br>
+							<i class='fas fa-envelope'>&ensp;</i>Stnaeeni@ut.ac.ir</li>
 						<li><strong>Rouhollah Amirabadi, Assistant Professor</strong>
 						<br> 
-							School of Civil Engineering, College
+							<i class='fas fa-map-marker-alt' style="font">&ensp;</i>School of Civil Engineering, College
 							of EngineeringUniversity of Qom, Qom, lran<br>
-							+98-253-2103248<br>
-							R.amirabadi@qom.ac.ir</li>
+							<i class='fas fa-phone-square'>&ensp;</i>+98-253-2103248<br>
+							<i class='fas fa-envelope'>&ensp;</i>R.amirabadi@qom.ac.ir</li>
 					</ul>
-	
 				</div>
 			
-				
-
 			</div>
+
 			<div class="div3">
 
-				<div class="Personal_info" style="background-color: white">
-					
-					<i class='fas fa-wrench'>	Personal Info</i>
+				<div id="Personal_info">	
+					<i class='fas fa-wrench'>&ensp;Personal Info</i>
 					<ul class="info_parent">
 						<li>
-							<i class='fas fa-phone-square'>	Phone</i>
+							<i class='fas fa-phone-square'>&ensp;Phone</i>
 							<ul class="info">
-								<li>0098-936-0755588</li>
+								<li>&ensp;&ensp;+98-9360755588</li>
 							</ul>
 						</li>
 						<li>
-							<i class='fas fa-map-marker-alt'>	Address</i>
+							<i class='fas fa-map-marker-alt'>&ensp;Address</i>
 							<ul class="info">
-								<li>Qom, Iran</li>
+								<li>&ensp;&ensp;Qom, Iran</li>
 							</ul>
 						</li>
 						<li>
-							<i class='fas fa-envelope'>	Mail</i>
+							<i class='fas fa-envelope'>&ensp;Mail</i>
 							<ul class="info">
-								<li>abolfazl.yousefi@ut.ac.ir</li>
+								<li>&ensp;&ensp;abolfazl.yousefi@ut.ac.ir</li>
 							</ul>
 						</li>
 						<li>
-							<i class='fas fa-envelope'>	Linkedin</i>
+							<i class='fas fa-envelope'>&ensp;Linkedin</i>
 							<ul class="info">
-								<li>https://www.linkedin.com/in/abolfazl-yousefi-3781b584/</li>
+								<li>&ensp;&ensp;https://www.linkedin.com/in/abolfazl-yousefi-3781b584/</li>
 							</ul>
 						</li>
 					</ul>
 				</div>
 
 
-				<div class="Technical-Skills" style="background-color: white">
-					<i class='fas fa-wrench'> Technical Skills</i>
+				<div id="Technical-Skills">
+					<i class='fas fa-wrench'>&ensp;Technical Skills</i>
 					<ul class="skills">
 						<li> Machine Learning</li>
 						<li>Spreadsheet</li>
 						<li>SQL Database/Coding</li>
-						<li>Python Programming</li>
+						<li>Python </li>
 						<li>Git & GitHub</li>
 						<li>Data Manipulation</li>
 						<li>MATLAB</li>
 						<li>Image Processing</li>
 						<li>Data Visualization</li>
+						<li>HTML</li>
+						<li>CSS</li>
 						
 					</ul>
 				</div>
 				<!--
 				<div style="height: 200px;"></div>
 				-->
-				
-				<div class="Certifications" style="background-color: white">
-					<i class='fas fa-award'>	Certifications</i>
-					<ul class="courses">
-
-						 <li><a href="https://www.datacamp.com/statement-of-accomplishment/track/57ca3bd17d2839e65040d381710227f49c414092" target=>Data Scientist with Python Track | Datacamp, Inc. | '19</a></li>
+				 
+				<div id="Certifications">
+					<i class='fas fa-award'>&ensp;Certifications</i>
+					<ul id="courses">
+						 <li><a href="https://www.datacamp.com/statement-of-accomplishment/track/57ca3bd17d2839e65040d381710227f49c414092" target="_blank" >Data Scientist with Python Track | Datacamp, Inc. | '19</a></li>
 
 						 <li><a href="https://www.datacamp.com/statement-of-accomplishment/track/6946dfa4d0ba161a88402825d5612f3b0a741ec0" target="_blank"> Data Analyst with Python Track | Datacamp, Inc. | '19</a></li>
 
@@ -276,12 +425,12 @@
 						<li><a href="https://www.datacamp.com/statement-of-accomplishment/track/60391ca0ec2538d8fcf6719b6d27339dac59d9b8" target="_blank">Time Series with Python Track | Datacamp, Inc. | '19</a></li>
 
 						<li><a href="#" target="_blank">Data Visualization with Python Track | Datacamp, Inc. | '19</a></li>
+						
+						<li><a href="https://www.sololearn.com/Certificate/1060-916477/pdf" target="_blank">SQL Fundamentals | SoloLearn, Inc. | '19</a></li>
 
-						<li><a href="#" target="_blank">SQL Server Fundamentals | Datacamp, Inc. | '19</a></li>
+						<li><a href="https://www.sololearn.com/Certificate/1014-916477/pdf" target="_blank">HTML Fundamentals | SoloLearn, Inc. | '19</a></li>
 
-						<li><a href="#" target="_blank">SQL Fundamentals | Datacamp, Inc. | '19</a></li>
-
-						<li><a href="#" target="_blank"> Image Processing with Python | Datacamp, Inc. | '19</a></li>
+						<li><a href="https://www.sololearn.com/Certificate/1023-916477/pdf" target="_blank"> CSS Fundamentals | SoloLearn, Inc. | '19</a></li>
 
 					</ul>
 				</div>
